@@ -4,9 +4,8 @@ count = 0
 number = random.randint(1, 99)
 print("Загадано число от 1 до 99")
 
-while True:
-    predict = int(input())
-    count += 1
+for count in range(1, 100):  # более компактный вариант счетчика
+    predict = random.randint(1, 100)  # предполагаемое число
     if number == predict:
         break  # выход из цикла, если угадали
     elif number > predict:
